@@ -5,7 +5,7 @@ const fetchBreedDescription = (breed, cb) => {
     if (err) return cb(err, null);
 
     const data = JSON.parse(body)[0];
-    data ? cb(null, data.desscription) : cb("Uh oh! Cannot find breed!", null);
+    data ? cb(null, data.description) : cb("Uh oh! Cannot find breed!", null);
   });
 };
 
